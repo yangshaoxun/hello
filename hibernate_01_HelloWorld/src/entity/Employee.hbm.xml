@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+	<!-- 实体类的映射 -->
+	<class name="Employee" table="TB_EMPLOYEE">
+		<!-- 主键属性的映射 -->
+		<id name="id" column="emp_id">
+			<!-- 主键生成器 -->
+			<generator class="identity"/>
+		</id>
+		<!-- 其它属性的映射 -->
+		<property name="name" column="emp_name"/>
+		<property name="hireDate" column="emp_hiredate"/>
+	</class>
+
+</hibernate-mapping>
